@@ -1,0 +1,69 @@
+
+.button {
+    border: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 8px;  
+    background-color: rgb(2, 6, 23);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    order: 3;
+    text-decoration: none;
+    width: fit-content;
+
+}
+
+.button p {
+  z-index: 2;
+  color: white;
+  font-size: 14px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon{
+    color: rgb(209, 209, 209);
+    width: 20px;
+    margin-left: 5px;
+}
+
+/* Rotating background with gradient and glow */
+.button::before {
+  content: "";
+  position: absolute;
+  width: 600%;
+  height: 600%;
+  background: conic-gradient(from 90deg at 50% 50%, #e2cbff 0, #393bb2 50%, #e2cbff 100%);
+  animation: rotateAnim 5s linear infinite;
+  filter: blur(10px) brightness(1.2);
+  z-index: 0;
+}
+
+/* Inner mask */
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: rgb(2, 6, 23);
+  border-radius: 8px;
+  z-index: 1;
+  box-shadow: inset 0 0 20px rgba(0, 183, 255, 0.1); /* subtle inner glow */
+}
+
+/* Rotating animation */
+@keyframes rotateAnim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

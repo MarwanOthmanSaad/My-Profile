@@ -1,0 +1,118 @@
+
+.box{
+    background-color: rgb(4, 7, 29);
+    border: 1px solid rgb(30, 32, 52);
+    border-radius: 15px;
+    
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 800;
+    justify-self: center;
+    order: 2;
+}
+
+.name{
+    color: rgb(203, 172, 249);
+}
+
+.span {
+    position: relative;
+}
+
+.span::before {
+    content: "";
+    color: rgb(205, 95, 248);
+    animation: words 20s infinite;
+}
+
+.span::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    border-left: 3px solid black;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid rgb(205, 95, 248);
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Web Developer";
+    }
+    21%, 40% {
+        content: "Front-End";
+    }
+    41%, 60% {
+        content: "Web Designer";
+    }
+    61%, 80% {
+        content: "IT collge student";
+    }
+    81%, 100% {
+        content: "Freelance";
+    }
+}
+
+.image{
+    width: 200px;
+    justify-self: center;
+    gap: 0;
+    order: 1;
+}
+
+.img{
+    width: 100%;
+}
+
+.buttonShowPorject{
+    order: 3;
+}
+
+@media (min-width:880px) {
+    .box{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        padding: 40px 5px;
+    }
+    .image{
+        order: 2;
+    }
+    .title{
+        order: 1;
+    }
+    .buttonShowPorject{
+        order: 3;
+    }
+
+}
+
+@media (min-width:640px) {
+    
+    .title{
+        font-size: 3.5rem;
+    }
+    .image{
+        width: 250px;
+    }
+}

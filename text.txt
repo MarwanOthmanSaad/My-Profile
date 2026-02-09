@@ -1,0 +1,91 @@
+1. الصفحة الرئيسية
+2. حول
+3. مشاريع
+4. اتصال
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+src/
+│
+├── assets/                  # (الملفات الثابتة)
+│   ├── images/              # الصور (مثل الشعار، صور المواد)
+│   ├── icons/               # الأيقونات
+│   └── global.css           # (Global CSS) التنسيقات العامة والخطوط
+│
+├── components/              # (المكونات العامة المستخدمة في أكثر من مكان)
+│   │
+│   ├── common/              # عناصر الواجهة الصغيرة
+│   │   ├── Button.jsx       # كود الزر
+│   │   ├── Button.module.css # ستايل الزر
+│   │   ├── Card.jsx
+│   │   └── Card.module.css
+│   │
+│   └── layout/              # هيكل الصفحة (القوائم)
+│       ├── Sidebar.jsx      # القائمة الجانبية (للتنقل)
+│       ├── Sidebar.module.css
+│       ├── Layout.jsx       # الحاوية الرئيسية
+│       └── Layout.module.css
+│
+├── pages/                   # (الصفحات الخمس الرئيسية)
+│   │
+│   ├── Home/                # 1. الرئيسية (المهام)
+│   │   ├── components/      # مكونات خاصة بصفحة المهام فقط
+│   │   │   ├── TaskItem.jsx
+│   │   │   └── TaskItem.module.css
+│   │   ├── Home.jsx         # الصفحة الرئيسية
+│   │   └── Home.module.css  # ستايل الصفحة الرئيسية
+│   │
+│   ├── Materials/           # 2. المواد الدراسية
+│   │   ├── components/
+│   │   │   ├── SubjectCard.jsx
+│   │   │   └── SubjectCard.module.css
+│   │   ├── Materials.jsx
+│   │   └── Materials.module.css
+│   │
+│   ├── Quizzes/             # 3. الاختبارات
+│   │   ├── components/
+│   │   │   ├── Timer.jsx
+│   │   │   └── Timer.module.css
+│   │   ├── Quizzes.jsx
+│   │   └── Quizzes.module.css
+│   │
+│   ├── Profile/             # 4. البروفايل
+│   │   ├── Profile.jsx
+│   │   └── Profile.module.css
+│   │
+│   └── Settings/            # 5. الإعدادات
+│       ├── Settings.jsx
+│       └── Settings.module.css
+│
+├── data/                    # (البيانات الوهمية - مؤقتاً)
+│   ├── tasksData.js         # مصفوفة المهام
+│   └── subjectsData.js      # قائمة المواد
+│
+├── App.jsx                  # تجميع الراوتر (Routing)
+├── main.jsx                 # نقطة البداية (استيراد global.css هنا)
+└── index.html               # (خارج src) ملف الـ HTML الرئيسي
+
+
+يمكن انشاء مجلد داخل كل كمبليد لزيادة الترتيب
+مثل header , todo ...إلخ

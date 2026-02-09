@@ -1,0 +1,70 @@
+.Contact{
+    margin-top: 200px;
+}
+.titleContact{
+    width: 45vw;
+    margin: auto;
+    line-height: 1;
+    text-align: center;
+}
+
+@media (max-width: 880px) {
+    .titleContact{
+        width: 80%;
+
+    }
+}
+
+.topTitleContact{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.bottomTitleContact{
+    margin-top: 10px;
+    font-size: 25px;
+    opacity: .7;
+}
+
+.Button{
+    margin-top: 40px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+}
+
+.Copyright{
+    font-size: 1.5rem;
+}
+
+.Mylinks{
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.Mylinks a{
+    background-color: rgb(13, 20, 36);
+    border: 1px solid rgb(43, 50, 63);
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+@media (min-width: 600px) {
+    .footer{
+        flex-direction: row;
+    }
+}

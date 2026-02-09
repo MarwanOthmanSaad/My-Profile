@@ -1,0 +1,55 @@
+header{
+    width: fit-content;
+    padding: 10px 15px;
+    
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 0px rgb(143, 139, 139);
+    background-color: var(--navbar-bg);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translate( -50% , 30px);
+
+    --position: -138px;
+    --active-bar : rgb(205, 95, 248);
+
+    transition: 0.5s;
+
+    z-index: 100;
+
+    font-size: 1.5rem;
+
+    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    border-radius: 30px;
+}
+
+
+
+header::before{
+    content: "";
+    width: 75px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(143, 139, 139, 0.308);
+    z-index: -1;
+    position: absolute;
+    transform: translateX(var(--position));
+
+    transition: all 0.5s ;
+
+}
+
+/* header.About::before{
+    transform: translateX(-138px);
+}  */

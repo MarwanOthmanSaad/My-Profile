@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --defualt-bg: rgb(0, 3, 25); 
+    --navbar-bg: #161a31;
+}
+
+body{
+    background-color: var(--defualt-bg);
+    color: beige;
+    font-family: NotoSans;
+}
+
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+
+}
+
+@font-face {
+    font-family: NotoSans;
+    src: url(../../public/fonts/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth\,wght.ttf);
+    font-weight: 100 900;
+}

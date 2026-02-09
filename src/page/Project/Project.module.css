@@ -1,0 +1,149 @@
+.Project{
+    margin-top: 200px;
+
+}
+.titleProject{ 
+    font-size: 40px;
+    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+}
+
+.colorSpan{
+    color: rgb(199, 112, 240);
+}
+
+.AllProject{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 40px;
+}
+
+.OneProject{
+    
+    padding: 20px;
+    background-color: rgb(0, 3, 25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    border: 1px solid rgba(87, 27, 156, 0.486);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.OneProject:hover{
+    box-shadow: 0px 0px 4px 3px rgb(26, 29, 48);
+}
+
+.boxImgProject{
+    width: 100%;
+    height: 290px;
+    background-color: #13162D;
+    border-radius :24px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.content_title{
+    font-size: 26px;
+    font-weight: 700;
+}
+.content_description{
+    font-size: 20px;
+    opacity: .7;
+}
+
+
+
+
+
+
+
+.bottomLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.Tools{
+    display: flex;
+}
+.BoxImgTool{
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(60, 63, 81);
+    border-radius: 50%;
+    margin-right: -12px;
+    background-color: #13162D;
+    
+}
+.Img{
+    height: 100%;
+    padding: 10px;
+}
+
+
+
+.buttonLinks{
+    background-color: rgb(87, 27, 156);
+    line-height: 100%;
+    padding: 7px;
+    border-radius: 20px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: rgb(210, 210, 255);
+
+}
+
+.Links{
+    display: flex;
+    gap: 10px;
+}
+
+.iconLive{
+    color: rgb(209, 209, 209);
+    width: 23px;
+}
+
+.img1{
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(4deg);
+    overflow: hidden;
+    transition: 0.4s;
+    width: 100%;
+
+}
+
+.img1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.OneProject:hover .img1{
+    transform: translateX(-50%) rotate(0deg);
+
+}
+
+@media (min-width: 450px) {
+    .bottomLinks{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
