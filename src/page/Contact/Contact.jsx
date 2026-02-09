@@ -14,11 +14,11 @@ export default function Contact(){
                     Copyright © 2026 Marwan Al-Fakhri
                 </div>
                 <div className={styles.Mylinks}>
-                    <a href=""><i className="fa-brands fa-instagram"></i></a>
-                    <a href=""><i className="fa-brands fa-github"></i></a>
-                    <a href=""><i className="fa-brands fa-facebook"></i></a>
-                    <a href=""><i className="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i className="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/mwn.alfakhri?igsh=cmRpMWF2cnU2dHAx"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/MarwanOthmanSaad"><i className="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/share/1GZ1C6qAZy/"><i className="fa-brands fa-facebook"></i></a>
+                    {/* <a href=""><i className="fa-brands fa-linkedin"></i></a> */}
+                    <a href="https://api.whatsapp.com/qr/ZIDZXDTQ2GZSA1"><i className="fa-brands fa-whatsapp"></i></a>
 
                 </div>
             </footer>
