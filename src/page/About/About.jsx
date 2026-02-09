@@ -1,5 +1,5 @@
 import styles from './About.module.css'
-import AboutImg from '../../assets/images/About.png'
+import AboutImg from '../../assets/images/about.png'
 import Skills from './components/Skills'
 
 
